@@ -1,0 +1,93 @@
+/* UNIVERSAL SELECTORS*/
+body {
+	background-color: #828081;
+	font-size: 20px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+a {
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	font-family: 'Poor Story', cursive;
+}
+
+.startBtn {
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	background-color: red;
+	display: inline-block;
+	padding: 20px;
+	padding-left: 45px;
+	padding-right: 45px;
+	margin: 15px;
+}
+
+.startBtn:hover {
+	background-color: green;
+	transform: scale(1.2);
+	font-size: 30px;
+	text-align: center;
+	cursor: pointer;
+}
+
+/*RULES*/
+.rules {
+	color: floralwhite;
+	background-color: lightblue;
+	padding: 15px;
+	text-align: center;
+	display: inline-block;
+}
+
+/*CRYSTALS*/
+.blueCrystal, .redCrystal, .blackCrystal, .orangeCrystal {
+	display: inline-block;
+	padding: 20px;
+	border: 1px white solid;
+	margin-top: 15px;
+}
+
+.blueCrystal:hover {
+	background-color: lightsteelblue;
+	transform: scale(1.1);
+	margin: 10px;
+}
+
+.redCrystal:hover {
+	background-color: red;
+	transform: scale(1.1);
+	margin: 10px;
+}
+
+.blackCrystal:hover {
+	background-color: black;
+	transform: scale(1.1);
+	margin: 10px;
+}
+
+.orangeCrystal:hover {
+	background-color: lightcoral;
+	transform: scale(1.1);
+	margin: 10px;
+}
+
+.number {
+	margin: 15px;
+	padding: 25px;
+	color: black;
+	background-color: aquamarine;
+	display: inline-block;
+	font-family: 'Poor Story', cursive;
+}
+
+#score, #ranNumber{
+	font-size: 30px;
+}
+
+.startoff {
+	color: lightsteelblue;
+	background-color: lightsteelblue;
+}
