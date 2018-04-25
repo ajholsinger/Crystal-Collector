@@ -14,7 +14,7 @@ $(".startBtn").on("click", function() {
 	$('#ranNumber').text(Math.floor(Math.random() * 500) + 0);
 	random = document.getElementById('ranNumber').innerText;
 	console.log("The random number is: " + random);
-	$('.startBtn').remove();
+	$('.startBtn').hide();
 });
 
 $(".crystals").on("click", ".not-showing", function() {
@@ -52,10 +52,30 @@ $(".crystals").on("click", ".showing", function(){
 	
 	if (random == score) {
 		alert("YOU WON!!!");
+		reload();
 	}
 	else if (score > random) {
 		alert("GAME OVER");
 		alert("TRY AGAIN");
+		reload();
 	}
+	
+	function reload() {
+		location.reload();
+	}
+	
+	function reset() {
+		$(".crystals").addClass('not-showing');
+		$(".startBtn").show();
+		blue = "";
+		red = "";
+		black = "";
+		orange = "";
+		score = 0;
+		$('score').text("");
+		$("#ranNumber").text("");
+		$(".crystals").addClass("not-showing").removeClass("showing");
+	}
+	
 });
 });
